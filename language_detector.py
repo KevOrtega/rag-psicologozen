@@ -21,5 +21,5 @@ def detect_pdf_language(pdf_path):
         lang_detected = detect(text_sample)
         tesseract_lang = LANG_MAP.get(lang_detected, "eng")
         return tesseract_lang
-    except Exception as e:
+    except Exception:
         return "eng"
