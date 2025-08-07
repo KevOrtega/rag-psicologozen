@@ -1,10 +1,10 @@
-from pdf_loader import load_and_split_documents
+from split_documents import split_documents
 from embedder import index_documents
 
 def save_documents():
     # 1. Cargar y dividir documentos
     print("Cargando y procesando documentos...")
-    docs = load_and_split_documents()
+    docs = split_documents()
 
     # 2. Guardar documentos
     print("Creando embeddings...")

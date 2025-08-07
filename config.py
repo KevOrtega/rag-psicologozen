@@ -9,4 +9,4 @@ LLM_MODEL = os.getenv("LLM_MODEL")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL")
 QDRANT_ENDPOINT = os.getenv("QDRANT_ENDPOINT")
 
-PDF_PATHS = ["document1.pdf", "document2.pdf"]
+DOCUMENT_PATHS = ["document1.pdf", "document2.pdf"]
