@@ -15,10 +15,9 @@ def load_vectorstore():
 
 def index_documents(docs):
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
-    client = QdrantClient(url=QDRANT_ENDPOINT)
     QdrantVectorStore.from_documents(
         documents=docs,
         embedding=embeddings,
-        client=client,
+        url=QDRANT_ENDPOINT,
         collection_name="clinical_docs",
     )
